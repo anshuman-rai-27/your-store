@@ -15,14 +15,22 @@ datasource db {
 }
 
 model Store {
-  id String @id @default(cuid())
+  id String @id @default(uuid())
   name String
   userId String
+  billboards Billboard[] @relation("StoreToBillboard")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-// anshumanrishi27
 
-// model Post {
-//   id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
-// }
+model Billboard {
+  id String @id @default(uuid())
+  storeId String
+  store Store @relation("StoreToBillboard",fields: [storeId] , references: [id])
+  label String
+  imageUrl String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([storeId])
+}
