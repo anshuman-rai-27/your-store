@@ -15,6 +15,9 @@ export async function GET (
         const category = await prismadb.category.findUnique({
             where:{
                 id:params.categoryId
+            },
+            include: {
+                billboard: true,
             }
         });
         return NextResponse.json(category);
@@ -105,7 +108,8 @@ export async function DELETE (
         const category = await prismadb.category.deleteMany({
             where:{
                 id:params.categoryId
-            }
+            },
+            
         });
         return NextResponse.json(category);
 
