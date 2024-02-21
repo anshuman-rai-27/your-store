@@ -10,8 +10,8 @@ datasource db {
   // provider = "mongodb"
   provider = "postgresql"
   url      = env("DATABASE_URL")
-  // directUrl  = env("DIRECT_URL")
-  relationMode = "prisma"
+  directUrl  = env("DIRECT_URL")
+  // relationMode = "prisma"
 }
 
 model Store {
