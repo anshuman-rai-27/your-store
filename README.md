@@ -9,6 +9,9 @@ Pass : lol@123456@
 
 # Apparel Designer
 
+![Screenshot 2024-07-03 172856](https://github.com/anshuman-rai-27/your-store/assets/118046194/94fa8599-1b3c-4c72-a6e4-08d60fcabc0b)
+
+
 ![Screenshot 2024-07-03 172943](https://github.com/anshuman-rai-27/your-store/assets/118046194/256209af-2789-4722-b5b8-86757329dc57)
 
 
