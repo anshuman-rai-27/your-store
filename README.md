@@ -1,6 +1,10 @@
 ## Ecommerce CMS 
 # Make your own store
 
+# Test 
+email: nixawik736@kinsef.com
+Pass : lol@123456@
+
 # Website View
 
 #Dashboard
